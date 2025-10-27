@@ -110,14 +110,14 @@ export default function ProjectsPage() {
   return (
     <main className="relative min-h-screen overflow-hidden p-6 md:p-12">
       <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-slate-950 to-black dark:from-black dark:via-gray-950 dark:to-black" />
+        <div className="absolute inset-0 bg-linear-to-b from-black via-slate-950 to-black dark:from-black dark:via-gray-950 dark:to-black" />
         <div className="absolute left-1/4 top-1/4 h-96 w-96 animate-pulse rounded-full bg-blue-500/10 blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse rounded-full bg-slate-500/10 blur-3xl animation-delay-2000" />
         <div className="absolute left-1/2 top-1/2 h-96 w-96 animate-pulse rounded-full bg-gray-500/5 blur-3xl animation-delay-4000" />
         <div className="stars absolute inset-0" />
         <div className="stars2 absolute inset-0" />
         <div className="stars3 absolute inset-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-100 via-gray-100 to-slate-200 opacity-0 transition-opacity duration-500 dark:opacity-0 [.light_&]:opacity-95" />
+        <div className="absolute inset-0 bg-linear-to-b from-slate-100 via-gray-100 to-slate-200 opacity-0 transition-opacity duration-500 dark:opacity-0 in-[.light]:opacity-95" />
       </div>
 
       <div className="relative mx-auto max-w-7xl">
