@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun } from "lucide-react"
 import Link from "next/link"
+import { projects } from "@/lib/projects"
 
 export default function ProjectsPage() {
   const [searchTerm, setSearchTerm] = useState("")
