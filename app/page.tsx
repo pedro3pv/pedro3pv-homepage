@@ -12,8 +12,8 @@ import { socialLinks } from "@/lib/social-links"
 
 // ─── Skill tags ────────────────────────────────────────────────────────────
 const skills = [
-  "Python", "Node.js", "Docker", "Next.js",
-  "Supabase", "N8N", "Speech AI", "Web Scraping", "GO",
+  "Python", "Docker", "Next.js",
+  "Supabase", "N8N", "Web Scraping", "GO",
 ]
 
 export default function ProjectsPage() {
