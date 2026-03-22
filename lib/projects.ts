@@ -10,14 +10,14 @@ export const projects = [
     id: 2,
     title: "[WIP] SweetDesk",
     description:
-      "App desktop multiplataforma (Go + Next.js via Wails) que usa IA para fazer upscaling de wallpapers de qualquer resolução para 4K, com suporte a batch processing e busca integrada",
+      "App desktop multiplataforma (Go + Next.js via Wails) que usa IA para fazer upscaling de wallpapers de qualquer resolução para 4K, com suporte a batch processing e busca integrada.",
     url: "https://github.com/Molasses-Co/SweetDesk",
   },
   {
     id: 3,
     title: "Edukativos",
     description:
-      "Website institucional desenvolvido sob contrato para escola de arte e música em Fortaleza, em parceria com Siwan",
+      "Website institucional desenvolvido sob contrato para escola de arte e música em Fortaleza, em parceria com Siwan.",
     url: "https://edukativos.com.br",
   },
   // {
