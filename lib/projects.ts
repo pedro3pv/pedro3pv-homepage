@@ -1,18 +1,18 @@
 export const projects = [
   {
     id: 1,
-    title: "Sugr",
+    title: "[WIP] Aleteia",
     description:
-      "Plataforma moderna de acompanhantes com foco em segurança, privacidade e conexões respeitosas",
+      "Plataforma brasileira que agrega cursos gratuitos (Bradesco, FGV, ENAP, Khan Academy) em trilhas inteligentes, avalia o valor mercadológico dos certificados e unifica o progresso do estudante.",
     url: "https://sugr.com.br",
   },
-  {
-    id: 2,
-    title: "SugrTask",
-    description:
-      "Gerenciador de tarefas com IA que transforma ideias em tasks acionáveis automaticamente usando Kanban boards",
-    url: "https://task.sugr.com.br",
-  },
+  // {
+  //   id: 2,
+  //   title: "SugrTask",
+  //   description:
+  //     "Gerenciador de tarefas com IA que transforma ideias em tasks acionáveis automaticamente usando Kanban boards",
+  //   url: "https://task.sugr.com.br",
+  // },
   {
     id: 3,
     title: "Edukativos",
@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "SugrSSH",
+    title: "[WIP] SugrSSH",
     description:
       "Cliente SSH desktop multiplataforma similar ao Termius, desenvolvido com Rust e Next.js usando Tauri (em desenvolvimento)",
     url: "https://sugrssh.sugr.com.br",
