@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "[WIP] Aleteia",
+    title: "Aleteia",
     description:
       "Plataforma brasileira que agrega cursos gratuitos (Bradesco, FGV, ENAP, Khan Academy) em trilhas inteligentes, avalia o valor mercadológico dos certificados e unifica o progresso do estudante.",
     url: "https://aleteia.cc",
