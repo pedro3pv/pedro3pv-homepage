@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "[WIP] SweetDesk",
+    title: "SweetDesk",
     description:
       "App desktop multiplataforma (Go + Next.js via Wails) que usa IA para fazer upscaling de wallpapers de qualquer resolução para 4K, com suporte a batch processing e busca integrada.",
     url: "https://github.com/Molasses-Co/SweetDesk",
