@@ -3,9 +3,8 @@ import { projects } from "@/lib/projects"
 import { socialLinks } from "@/lib/social-links"
 
 import { TerminalWindow, TermLine, Prompt, SectionTitle } from "@/components/terminal/window"
-import { StatusBar } from "@/components/terminal/status-bar"
+import { LiveDiscord } from "@/components/terminal/live-discord"
 import { GitHubCard } from "@/components/terminal/github-card"
-import { DiscordCard } from "@/components/terminal/discord-card"
 import { LastFmCard } from "@/components/terminal/lastfm-card"
 import { SpotifyProfileCard } from "@/components/terminal/spotify-card"
 import { XTimeline } from "@/components/terminal/x-timeline"
@@ -38,9 +37,7 @@ export default function Home() {
 
         {/* ---------------- status (discord + spotify) ---------------- */}
         <SectionTitle command="cat ./status" path="~/.config" />
-        <div className="mb-4">
-          <DiscordCard />
-        </div>
+        <LiveDiscord />
         <div className="mb-10">
           <SpotifyProfileCard />
         </div>
@@ -111,8 +108,6 @@ export default function Home() {
             Feito com muito ctrl+c, ctrl+v e café.
           </TermLine>
         </div>
-
-        <StatusBar />
       </TerminalWindow>
     </div>
   )
