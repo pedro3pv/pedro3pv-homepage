@@ -34,6 +34,9 @@ jobs:
       - name: Criar arquivo .env
         run: |
           echo "TOKEN_GITHUB=${{ secrets.TOKEN_GITHUB }}" >> .env
+          echo "NEXT_PUBLIC_LASTFM_API_KEY=${{ secrets.LASTFM_API_KEY }}" >> .env
+          # Next reads .env.local too, so mirror the public key there as well
+          echo "NEXT_PUBLIC_LASTFM_API_KEY=${{ secrets.LASTFM_API_KEY }}" >> .env.local
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:

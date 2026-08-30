@@ -2,3 +2,13 @@
 /.next
 /node_modules
 /out
+
+# env files — never commit secrets / build vars
+.env
+.env.local
+.env*.local
+
+# tooling artifacts
+.omo
+tsconfig.tsbuildinfo
+*.tsbuildinfo

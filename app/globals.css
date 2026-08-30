@@ -28,40 +28,41 @@
 }
 
 
+/* Terminal palette — the whole homepage renders as a shell window. */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
 .dark {
@@ -102,6 +103,17 @@
 @theme inline {
   --font-sans: "Geist", "Geist Fallback";
   --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  /* terminal theme tokens */
+  --color-terminal-bg: #0a0e14;
+  --color-terminal-chrome: #10151d;
+  --color-terminal-code: #0f141b;
+  --color-terminal-border: #1e2732;
+  --color-terminal-dimmed: #6b7a8d;
+  --color-terminal-cyan: #22d3ee;
+  --color-terminal-green: #10b981;
+  --color-terminal-amber: #fbbf24;
+  --color-terminal-fg: #e6edf3;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -148,69 +160,39 @@
     @apply bg-background text-foreground;
   }
 
-  .stars {
-    background: transparent;
-    animation: animStar 50s linear infinite;
-    width: 1px;
-    height: 1px;
-    box-shadow:
-      779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
-      1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff,
-      36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff,
-      1448px 1157px #fff, 1084px 232px #fff, 347px 1776px #fff,
-      1629px 835px #fff, 479px 969px #fff, 1231px 960px #fff,
-      164px 527px #fff, 8px 646px #fff, 1150px 1126px #fff,
-      1556px 1982px #fff, 1260px 1961px #fff, 1675px 1741px #fff,
-      718px 1628px #fff, 242px 1343px #fff, 1497px 1880px #fff,
-      636px 959px #fff, 304px 686px #fff, 614px 751px #fff,
-      1428px 60px #fff, 355px 335px #fff, 1594px 158px #fff,
-      1945px 587px #fff, 749px 1785px #fff, 1301px 1237px #fff,
-      995px 1048px #fff, 524px 932px #fff, 214px 413px #fff,
-      1360px 1635px #fff, 1110px 1313px #fff, 412px 1783px #fff,
-      903px 1854px #fff, 700px 1936px #fff, 378px 125px #fff,
-      1118px 962px #fff, 781px 1811px #fff, 561px 137px #fff,
-      576px 1903px #fff, 1078px 1436px #fff, 1366px 474px #fff,
-      192px 162px #fff, 59px 453px #fff, 82px 1872px #fff,
-      779px 314px #fff, 73px 1507px #fff, 1693px 975px #fff,
-      654px 14px #fff, 494px 171px #fff, 1660px 263px #fff,
-      1333px 1421px #fff, 1206px 1645px #fff, 142px 388px #fff,
-      1379px 1003px #fff, 329px 469px #fff, 935px 1802px #fff,
-      828px 365px #fff, 275px 316px #fff, 1605px 1554px #fff,
-      717px 1697px #fff, 1925px 322px #fff, 1248px 240px #fff,
-      1888px 1773px #fff, 678px 1963px #fff, 1974px 1400px #fff,
-      51px 307px #fff, 1712px 393px #fff, 416px 170px #fff,
-      572px 219px #fff, 218px 8px #fff, 385px 1738px #fff,
-      240px 942px #fff, 1535px 806px #fff, 236px 1514px #fff,
-      73px 1633px #fff, 740px 1018px #fff, 1600px 377px #fff,
-      112px 1084px #fff, 1915px 1887px #fff, 1463px 1848px #fff,
-      1284px 1022px #fff, 1354px 834px #fff, 1446px 1484px #fff,
-      1355px 654px #fff, 1033px 1128px #fff, 157px 297px #fff,
-      52px 1080px #fff, 1121px 490px #fff, 1744px 1586px #fff,
-      958px 552px #fff, 1403px 1496px #fff, 1522px 548px #fff,
-      1532px 601px #fff, 1601px 539px #fff, 1024px 543px #fff,
-      1976px 1255px #fff, 1582px 1285px #fff, 1334px 1438px #fff,
-      673px 129px #fff, 1386px 1902px #fff, 416px 18px #fff,
-      200px 1898px #fff, 811px 347px #fff, 945px 217px #fff,
-      1735px 1228px #fff, 79px 761px #fff, 1980px 1558px #fff,
-      1942px 1050px #fff, 1696px 975px #fff, 1455px 1374px #fff,
-      1738px 1024px #fff, 1726px 1573px #fff, 1732px 1750px #fff,
-      1712px 1444px #fff, 1910px 1416px #fff, 1778px 1857px #fff;
+  ::selection {
+    background-color: rgba(16, 185, 129, 0.35);
+    color: var(--terminal-fg);
   }
 
-  @keyframes animStar {
-    from {
-      transform: translateY(0px);
+  /* terminal-style scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--terminal-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--terminal-border);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--terminal-dimmed);
+  }
+
+  /* terminal cursor blink for the prompt glyph */
+  @keyframes termblink {
+    0%,
+    49% {
+      opacity: 1;
     }
-    to {
-      transform: translateY(-2000px);
+    50%,
+    100% {
+      opacity: 0;
     }
   }
-
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-
-  .animation-delay-4000 {
-    animation-delay: 4s;
+  .term-cursor {
+    animation: termblink 1.1s step-end infinite;
   }
 }
