@@ -7,11 +7,10 @@ export const projects = [
     url: "https://aleteia.cc",
   },
   {
-    id: 2,
-    title: "SweetDesk",
-    description:
-      "App desktop multiplataforma (Go + Next.js via Wails) que usa IA para fazer upscaling de wallpapers de qualquer resolução para 4K, com suporte a batch processing e busca integrada.",
-    url: "https://github.com/Molasses-Co/SweetDesk",
+    "id": 2,
+    "title": "CBZ-Kindle-Converter",
+    "description": "App desktop (Go + React/TS via Wails) que usa IA (Real-ESRGAN) e seam carving para fazer upscaling e ajuste inteligente de proporção de mangás e HQs (.cbz), otimizando a resolução das páginas para leitura no Kindle.",
+    "url": "https://github.com/Molasses-Co/CBZ-Kindle-Converter"
   },
   {
     id: 3,
