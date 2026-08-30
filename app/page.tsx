@@ -7,7 +7,7 @@ import { LiveDiscord } from "@/components/terminal/live-discord"
 import { GitHubCard } from "@/components/terminal/github-card"
 import { LastFmCard } from "@/components/terminal/lastfm-card"
 import { SpotifyProfileCard } from "@/components/terminal/spotify-card"
-import { XTimeline } from "@/components/terminal/x-timeline"
+import { XProfileCard } from "@/components/terminal/x-card"
 
 import { TbExternalLink, TbClock } from "react-icons/tb"
 
@@ -48,10 +48,10 @@ export default function Home() {
           <LastFmCard />
         </div>
 
-        {/* ---------------- X timeline ---------------- */}
+        {/* ---------------- X (twitter) ---------------- */}
         <SectionTitle command="cat ./feed" path="~/.config" />
         <div className="mb-10">
-          <XTimeline screenName="pedro3pv" />
+          <XProfileCard />
         </div>
 
         {/* ---------------- projects ---------------- */}
