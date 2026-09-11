@@ -3,8 +3,10 @@
 import { useLiveData } from "./live-fetch"
 import { getLastFm, type LastFmResult } from "@/lib/lastfm"
 import { TermLine, DemoPill } from "./window"
-import { TbMusic } from "react-icons/tb"
+import { TbExternalLink, TbMusic } from "react-icons/tb"
 import { SiLastdotfm } from "react-icons/si"
+
+const LASTFM_PROFILE = "https://www.last.fm/pt/user/pedro3pv"
 
 const INITIAL: LastFmResult = {
   nowPlaying: null,
@@ -17,13 +19,25 @@ export function LastFmCard() {
   const live = data.source === "live"
 
   return (
-    <div className="rounded-lg border border-terminal-border p-4">
+    <a
+      href={LASTFM_PROFILE}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir perfil last.fm de pedro3pv"
+      className="group block rounded-lg border border-terminal-border p-4 transition-colors hover:border-terminal-green/60"
+    >
       <div className="mb-4 flex items-center justify-between">
-        <span className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-terminal-dimmed">
+        <span className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-terminal-dimmed transition-colors group-hover:text-terminal-green">
           <SiLastdotfm className="text-[#d51007]" aria-hidden="true" />
           last.fm / pedro3pv
         </span>
-        {!live && <DemoPill />}
+        <span className="flex items-center gap-2">
+          {!live && <DemoPill />}
+          <TbExternalLink
+            className="text-terminal-dimmed/50 transition-colors group-hover:text-terminal-green"
+            aria-hidden="true"
+          />
+        </span>
       </div>
 
       {data.nowPlaying && (
@@ -64,6 +78,6 @@ export function LastFmCard() {
           </TermLine>
         ))}
       </div>
-    </div>
+    </a>
   )
 }
